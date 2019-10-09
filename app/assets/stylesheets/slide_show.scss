@@ -82,6 +82,23 @@ img{
     align-self: center;
 }
 
+a{
+    color: rgb(0, 124, 155);
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(0, 124, 155);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.links_wrapper label a:hover{
+    cursor: pointer;
+}
+
 .links_wrapper label a{
     width: max-content;
 }
