@@ -1,2 +1,87 @@
-<h1>SlideShow#index</h1>
-<p>Find me in app/views/slide_show/index.html.erb</p>
+<div
+    id="document_start"
+>
+    <div
+        id="slides"
+        style="display: none;"
+    >
+    </div>
+    <div
+        id="will_cloned_image"
+        class="inactive-slide container"
+    >
+        <img />
+        <p
+            class="centered"
+        >
+        </p>
+    </div>
+    <div
+        id="slides_wrapper"
+    >
+        <div
+            class="slide_deck"
+        >
+            <ul
+                id="list_slides"
+            >
+                <li
+                    style="display: none;"
+                    class="slide_item"
+                >
+                    <a
+                        href="#"
+                    >
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div
+            id="image_preview"
+        >
+            <div
+                id="uploadPreview"
+            >
+            </div>
+        </div>
+    </div>
+    <div
+        class="links_wrapper"
+    >
+            <label
+                for="uploadImage"
+            >
+                <a
+                    href="#"
+                >
+                    Upload Image
+                </a>
+            </label>
+            <a
+                href="#"
+            >
+                Add Text
+            </a>
+            <a
+                href="#"
+            >
+                Add New Slide
+            </a>
+            <a
+                href="#"
+            >
+                Save Deck
+            </a>
+            <a
+                href="#"
+            >
+                Load Deck
+            </a>
+            <input
+                id="uploadImage"
+                type="file"
+                style="display: none;"
+            />
+        </div>
+    </div>
+</div>
