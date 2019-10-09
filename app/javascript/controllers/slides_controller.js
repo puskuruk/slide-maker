@@ -2,6 +2,7 @@ import { Controller } from "stimulus"
 import clonedImageNode from "../support/clonedImageNode";
 import addSlideLink from "../support/addSlideLink";
 import addTextToSlide from "../support/addTextToSlide";
+import uploadFile from "../support/uploadFile";
 
 export default class SlidesController extends Controller {
     addSlide(event){
@@ -28,5 +29,10 @@ export default class SlidesController extends Controller {
         event.preventDefault();
         const text = prompt("Enter a title for slide")
         addTextToSlide(text);
+    }
+
+    previewImage() {
+        console.log("a")
+        uploadFile();
     }
 }
