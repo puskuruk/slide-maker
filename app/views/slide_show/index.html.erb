@@ -25,12 +25,14 @@
         >
             <ul
                 id="list_slides"
+                data-controller="slides"
             >
                 <li
                     style="display: none;"
                     class="slide_item"
                 >
                     <a
+                        data-action="click->slides#showClickedSlide"
                         href="#"
                     >
                     </a>
