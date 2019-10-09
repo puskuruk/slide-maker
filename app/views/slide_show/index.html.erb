@@ -55,7 +55,6 @@
                 for="uploadImage"
             >
                 <a
-                    href="#"
                 >
                     Upload Image
                 </a>
@@ -88,6 +87,8 @@
                 id="uploadImage"
                 type="file"
                 style="display: none;"
+                data-controller="slides"
+                data-action="change->slides#previewImage"
             />
         </div>
     </div>
