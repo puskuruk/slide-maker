@@ -48,4 +48,16 @@ export default class SlidesController extends Controller {
         }
         saveSlidesToLocalStorage();
     }
+
+    loadFromLocalStorage(event){
+        event.preventDefault();
+        const slideDeck = document.getElementById("list_slides");
+        const hiddedLi = slideDeck.children[0].cloneNode(true);
+        slideDeck.innerHTML = ""
+        hiddedLi.style.display = "none";
+        slideDeck.append(hiddedLi);
+        setTimeout(() => {
+            loadSlidesFromLocalStorage();
+        }, 150);
+    }
 }
