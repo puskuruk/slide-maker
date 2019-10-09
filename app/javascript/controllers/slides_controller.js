@@ -3,6 +3,10 @@ import clonedImageNode from "../support/clonedImageNode";
 import addSlideLink from "../support/addSlideLink";
 import addTextToSlide from "../support/addTextToSlide";
 import uploadFile from "../support/uploadFile";
+import itemsWithSlideItemClass from "../support/itemsWithSlideItemClass";
+import getAllSlides from "../support/getAllSlides";
+import saveSlidesToLocalStorage from "../support/saveSlidesToLocalStorage";
+import loadSlidesFromLocalStorage from "../support/loadSlidesFromLocalStorage";
 
 export default class SlidesController extends Controller {
     addSlide(event){
@@ -34,5 +38,14 @@ export default class SlidesController extends Controller {
     previewImage() {
         console.log("a")
         uploadFile();
+    }
+
+    saveToLocalStorage(event){
+        event.preventDefault();
+        const slides = itemsWithSlideItemClass();
+        for (let index = 1; index < slides.length; index++) {
+            const element = slides[index];            
+        }
+        saveSlidesToLocalStorage();
     }
 }
