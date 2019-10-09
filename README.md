@@ -1,24 +1,14 @@
-# README
+### **This project made with stimulusJS and ruby on rails 6**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Upload Image
+    - upload base64 image
+# Add Text
+    - Add text from prompt to image previewer's center
+# Add New Slide
+    - Add new slide list item to slide deck
+    - Add group of image and text to image previewer with display none
+# Save Deck
+    - Save presentation to localStorage
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Load Deck
+    - Load deck from localStorage

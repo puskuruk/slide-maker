@@ -1,0 +1,99 @@
+<div
+    data-controller="start"
+    id="document_start"
+>
+    <div
+        id="slides"
+        style="display: none;"
+    >
+    </div>
+    <div
+        id="will_cloned_image"
+        class="inactive-slide container"
+    >
+        <img />
+        <p
+            class="centered"
+        >
+        </p>
+    </div>
+    <div
+        id="slides_wrapper"
+    >
+        <div
+            class="slide_deck"
+        >
+            <ul
+                id="list_slides"
+                data-controller="slides"
+            >
+                <li
+                    style="display: none;"
+                    class="slide_item"
+                >
+                    <a
+                        data-action="click->slides#showClickedSlide"
+                        href="#"
+                    >
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div
+            id="image_preview"
+        >
+            <div
+                id="uploadPreview"
+            >
+            </div>
+        </div>
+    </div>
+    <div
+        class="links_wrapper"
+    >
+            <label
+                for="uploadImage"
+            >
+                <a
+                >
+                    Upload Image
+                </a>
+            </label>
+            <a
+                href="#"
+                data-controller="slides"
+                data-action="click->slides#addTextToSlide"
+            >
+                Add Text
+            </a>
+            <a
+                href="#"
+                data-controller="slides"
+                data-action="click->slides#addSlide"
+            >
+                Add New Slide
+            </a>
+            <a
+                href="#"
+                data-controller="slides"
+                data-action="click->slides#saveToLocalStorage"
+            >
+                Save Deck
+            </a>
+            <a
+                href="#"
+                data-controller="slides"
+                data-action="click->slides#loadFromLocalStorage"
+            >
+                Load Deck
+            </a>
+            <input
+                id="uploadImage"
+                type="file"
+                style="display: none;"
+                data-controller="slides"
+                data-action="change->slides#previewImage"
+            />
+        </div>
+    </div>
+</div>
